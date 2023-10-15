@@ -1,0 +1,72 @@
+2023-10-15 23:50:00.213 +05:30 [INF] Registered 5 endpoints in 593 milliseconds.
+2023-10-15 23:50:01.270 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-10-15 23:50:01.345 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Status" INTEGER NOT NULL
+);
+2023-10-15 23:50:01.503 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-10-15 23:50:01.545 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name", "c"."Status"
+FROM "Contributors" AS "c"
+2023-10-15 23:50:01.710 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2023-10-15 23:50:01.724 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2023-10-15 23:50:01.821 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 23:50:01.825 +05:30 [INF] Hosting environment: Development
+2023-10-15 23:50:01.825 +05:30 [INF] Content root path: E:\GITHUB_Learning\.NetMicroservices_Learning\RegExpLibSite.com\src\Clean.Architecture.Web
+2023-10-15 23:50:01.850 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger - -
+2023-10-15 23:50:01.945 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-10-15 23:50:01.952 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger - - - 302 - - 103.2084ms
+2023-10-15 23:50:02.221 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 23:50:02.224 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;+charset=utf-8 279.6219ms
+2023-10-15 23:50:02.229 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-10-15 23:50:02.229 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 7.2814ms
+2023-10-15 23:50:02.275 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.7985ms
+2023-10-15 23:50:02.547 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-10-15 23:50:02.604 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-15 23:50:03.184 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 636.7583ms
+2023-10-15 23:50:17.924 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/index - -
+2023-10-15 23:50:17.927 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-10-15 23:50:17.929 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/index - - - 404 - - 4.8846ms
+2023-10-15 23:51:59.170 +05:30 [INF] Registered 5 endpoints in 231 milliseconds.
+2023-10-15 23:51:59.832 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-10-15 23:51:59.980 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2023-10-15 23:52:00.060 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-15 23:52:00.061 +05:30 [INF] Hosting environment: Development
+2023-10-15 23:52:00.061 +05:30 [INF] Content root path: E:\GITHUB_Learning\.NetMicroservices_Learning\RegExpLibSite.com\src\Clean.Architecture.Web
+2023-10-15 23:52:00.089 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger - -
+2023-10-15 23:52:00.210 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-10-15 23:52:00.215 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger - - - 302 - - 128.4140ms
+2023-10-15 23:52:00.500 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-10-15 23:52:00.500 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 23:52:00.501 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;+charset=utf-8 290.3983ms
+2023-10-15 23:52:00.506 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 5.2213ms
+2023-10-15 23:52:00.525 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.0273ms
+2023-10-15 23:52:00.592 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-10-15 23:52:00.610 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-15 23:52:01.133 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 540.8184ms
+2023-10-15 23:52:17.097 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/ - -
+2023-10-15 23:52:17.099 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/ - - - 302 - - 2.7060ms
+2023-10-15 23:52:17.108 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/index.html - -
+2023-10-15 23:52:17.131 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/index.html - - - 200 - text/html;+charset=utf-8 22.7879ms
+2023-10-15 23:52:17.157 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_vs/browserLink - -
+2023-10-15 23:52:17.162 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - -
+2023-10-15 23:52:17.163 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 1.1289ms
+2023-10-15 23:52:17.169 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.1737ms
+2023-10-15 23:52:17.220 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - -
+2023-10-15 23:52:17.222 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:57678/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.7810ms
